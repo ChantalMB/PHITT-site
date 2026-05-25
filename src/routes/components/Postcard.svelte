@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { title = 'History on Stamps', tagline = 'Philately in Troubled Times', body = '' } = $props();
+	let { title = 'History on Stamps', tagline = 'Philately in Troubled Times' } = $props();
 </script>
 
 <article
@@ -13,7 +13,7 @@
 	>
 		<!-- title + body text -->
 		<div class="flex flex-col justify-center min-w-0 px-6 pt-7 pb-4 sm:p-8">
-			<div class="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.18em] font-medium text-[#7a6a52]">
+			<div class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-[#7a6a52]">
 				<span class="inline-block h-1.5 w-1.5 rounded-full bg-orange-700"></span>
 				<span>Est. 2026 · Worldwide</span>
 			</div>
@@ -36,13 +36,10 @@
 				class="h-px my-4 bg-[linear-gradient(to_right,transparent,rgba(0,0,0,0.2),transparent)]"
 			></div>
 
-			<p class="text-[0.95rem] leading-[1.55] text-[#3d342a] m-0 mb-5 max-w-[38ch]">
-				{#if body}
-					{body}
-				{:else}
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				{/if}
+			<p class="text-base leading-[1.55] text-[#3d342a] m-0 mb-2 max-w-[38ch]">
+				"Postage stamps are the most universal form of public imagery other than money."
 			</p>
+			<div class="italic mb-5 font-fraunces">Eric Hobsbawm</div>
 		</div>
 
 		<!-- div -->

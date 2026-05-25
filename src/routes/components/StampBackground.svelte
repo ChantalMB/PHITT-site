@@ -27,7 +27,7 @@
 </script>
 
 <!-- adapted from: https://blog.logto.io/css-only-infinite-scroll -->
-<div class="carousel-grid grid h-screen grid-cols-5 grid-rows-5 gap-[10px] bg-cyan-50">
+<div class="carousel-grid grid h-screen grid-cols-5 grid-rows-5 gap-[10px] bg-[#585936]">
     {#each { length: 5 } as _, i}
 	<div class="carousel col-span-5 mx-auto flex w-screen h-full overflow-hidden">
 		<div class="{i % 2 === 0 ? 'scroller' : 'scroller-reverse'} flex h-full min-h-0 shrink-0 basis-[200%] sm:basis-[150%] md:basis-full gap-5 px-[10px] will-change-transform" style="animation-delay: {i * -7}s">
@@ -35,7 +35,7 @@
             <a
 				href="/explore/{extractStampId(img)}"
 				onclick={(e) => handleStampClick(e, img)}
-				class="card flex h-full min-h-0 w-full flex-col items-center justify-center opacity-50 hover:opacity-100"
+				class="card flex h-full min-h-0 w-full flex-col items-center justify-center opacity-65 hover:opacity-100"
 			>
 				<img
 					class="block max-h-full w-auto max-w-full object-contain"

@@ -36,7 +36,7 @@
 		<a
 			{href}
 			class="group relative flex w-1/3 items-center justify-center gap-2 py-4
-				text-[0.72rem] font-semibold uppercase tracking-[0.22em]
+				text-xs font-semibold uppercase tracking-[0.22em]
 				transition-colors
 				{active ? 'text-[#1c1814]' : 'text-[#7a6a52] hover:text-[#1c1814]'}"
 		>
