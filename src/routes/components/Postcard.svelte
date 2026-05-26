@@ -1,4 +1,9 @@
 <script lang="ts">
+	import BinaryIcon from 'phosphor-svelte/lib/BinaryIcon';
+	import DatabaseIcon from 'phosphor-svelte/lib/DatabaseIcon';
+	import GitBranchIcon from 'phosphor-svelte/lib/GitBranchIcon';
+
+
 	let { title = 'History on Stamps', tagline = 'Philately in Troubled Times' } = $props();
 </script>
 
@@ -51,24 +56,11 @@
 				flex-row items-center justify-between
 				sm:flex-col sm:items-end sm:justify-between"
 		>
-			<!-- TODO: use stamp image instead of failed CSS? -->
-			<!-- <div
-				class="w-[72px] h-[86px] sm:w-[92px] sm:h-[110px] p-1.5 bg-[#fdf9f1]
-					filter-[drop-shadow(0_2px_3px_rgba(0,0,0,0.15))]
-					[-webkit-mask:radial-gradient(circle_4px_at_4px_50%,transparent_98%,#000)_0_0/12px_12px_repeat-y,radial-gradient(circle_4px_at_50%_4px,transparent_98%,#000)_0_0/12px_12px_repeat-x]
-					[mask:radial-gradient(circle_4px_at_4px_50%,transparent_98%,#000)_0_0/12px_12px_repeat-y,radial-gradient(circle_4px_at_50%_4px,transparent_98%,#000)_0_0/12px_12px_repeat-x]
-					[-webkit-mask-composite:source-in,source-in] mask-intersect"
-			>
-				<div
-					class="w-full h-full flex flex-col items-center justify-center gap-1
-						border border-dashed border-black/35 text-[#5a2a0a]
-						[font-family:var(--font-display)]
-						bg-[repeating-linear-gradient(45deg,rgba(194,65,12,0.12)_0_6px,transparent_6px_12px),linear-gradient(135deg,#f8d7a8,#e8a866)]"
-				>
-					<span class="text-3xl font-black leading-none">∞</span>
-					<span class="text-[0.7rem] tracking-[0.2em] font-bold">PHITT</span>
-				</div>
-			</div> -->
+			<div class="flex flex-col gap-2">
+				<a href="https://github.com/ChantalMB/PHITT-site" target="_blank"><GitBranchIcon color="#5a4a32" weight="duotone" size="{32}" /></a>
+				<a href="https://github.com/ChantalMB/PHITT-data" target="_blank"><BinaryIcon color="#5a4a32" weight="duotone" size="{32}" /></a>
+				<a href="https://phitt-database.fly.dev/phitt/phitt_data" target="_blank"><DatabaseIcon color="#5a4a32" weight="duotone" size="{32}" /></a>
+			</div>
 
 			<!-- "ink" stamp -->
 			<div class="flex items-center gap-2 rotate-[-8deg] opacity-55 m-0 sm:mr-auto sm:mt-auto">

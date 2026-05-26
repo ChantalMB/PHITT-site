@@ -119,6 +119,20 @@ body {
 	}
 }
 
+@utility loading-icon {
+	animation: mailbox-bounce 1.4s ease-in-out infinite;
+	transform-origin: 50% 90%;
+
+	@media (prefers-reduced-motion: reduce) {
+		animation: none;
+	}
+}
+
+@keyframes mailbox-bounce {
+	0%, 100% { transform: translateY(0) rotate(-4deg); }
+	50%      { transform: translateY(-10px) rotate(4deg); }
+}
+
 @utility stamp {
 	/* filter: drop-shadow(0 2px 4px rgb(0 0 0 / 0.2)); */
 	transition: transform 300ms ease-in-out, filter 300ms ease-in-out;

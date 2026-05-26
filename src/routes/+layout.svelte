@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { fade } from 'svelte/transition';
+    import { cubicOut } from 'svelte/easing';
+
 	import './layout.css';
 	let { children } = $props();
 
@@ -50,5 +53,14 @@
 		</a>
 	{/each}
 </nav>
+
+<!-- {#key page.url.pathname}
+    <div
+        in:fade={{ duration: 200, delay: 150, easing: cubicOut }}
+        out:fade={{ duration: 150, easing: cubicOut }}
+    >
+        {@render children()}
+    </div>
+{/key} -->
 
 {@render children()}

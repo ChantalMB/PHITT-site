@@ -1,5 +1,5 @@
 {
-    "themes": [
+    "theme": [
         "Philately",
         "Philatelic",
         "Discovery",
@@ -43,7 +43,7 @@
         "Infrastructure (Transport)",
         "Infrastructure (Railway)"
     ],
-    "topics": [
+    "topic": [
         "Centenary of 1st Anniversary of the end of the  War of Independence",
         "Allegory of death of Skanderbeg",
         "The 9th Anniversary of Revolution",
@@ -271,7 +271,7 @@
         "Micronesia",
         "Polynesia"
     ],
-    "countries": [
+    "country": [
         "Afghanistan",
         "Albania",
         "Algeria",
